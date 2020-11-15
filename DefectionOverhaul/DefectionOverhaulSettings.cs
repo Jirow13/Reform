@@ -10,21 +10,21 @@ namespace DefectionOverhaul
     public override string FolderName => "DefectionOverhaul";
     public override string Format => "xml";
 
-    [SettingPropertyInteger("Defection", -100, 100)]
+    [SettingPropertyInteger("Defection", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationDefect {
       get;
       set;
     } = 10;
 
-    [SettingPropertyInteger("Deceitful (Honor -2)", -100, 100)]
+    [SettingPropertyInteger("Deceitful (Honor -2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationDefectHonorMinus2 {
       get;
       set;
     } = 30;
 
-    [SettingPropertyInteger("Devious (Honor -1)", -100, 100)]
+    [SettingPropertyInteger("Devious (Honor -1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationDefectHonorMinus1 {
       get;
@@ -32,7 +32,7 @@ namespace DefectionOverhaul
     } = 20;
 
 
-    [SettingPropertyInteger("Honest (Honor 1)", -100, 100)]
+    [SettingPropertyInteger("Honest (Honor 1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationDefectHonorPlus1 {
       get;
@@ -40,7 +40,7 @@ namespace DefectionOverhaul
     } = 0;
 
 
-    [SettingPropertyInteger("Honorable (Honor 2)", -100, 100)]
+    [SettingPropertyInteger("Honorable (Honor 2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationDefectHonorPlus2 {
       get;
@@ -48,7 +48,7 @@ namespace DefectionOverhaul
     } = -10;
 
 
-    [SettingPropertyInteger("Leave", -100, 100)]
+    [SettingPropertyInteger("Leave", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeave {
       get;
@@ -56,14 +56,14 @@ namespace DefectionOverhaul
     } = 10;
 
 
-    [SettingPropertyInteger("Leave - Deceitful (Honor -2)", -100, 100)]
+    [SettingPropertyInteger("Leave - Deceitful (Honor -2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveHonorMinus2 {
       get;
       set;
     } = 30;
 
-    [SettingPropertyInteger("Leave - Devious (Honor -1)", -100, 100)]
+    [SettingPropertyInteger("Leave - Devious (Honor -1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveHonorMinus1 {
       get;
@@ -71,7 +71,7 @@ namespace DefectionOverhaul
     } = 20;
 
 
-    [SettingPropertyInteger("Leave - Honest (Honor 1)", -100, 100)]
+    [SettingPropertyInteger("Leave - Honest (Honor 1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveHonorPlus1 {
       get;
@@ -79,7 +79,7 @@ namespace DefectionOverhaul
     } = 0;
 
 
-    [SettingPropertyInteger("Leave - Honorable (Honor 2)", -100, 100)]
+    [SettingPropertyInteger("Leave - Honorable (Honor 2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveHonorPlus2 {
       get;
@@ -87,7 +87,7 @@ namespace DefectionOverhaul
     } = -10;
 
 
-    [SettingPropertyInteger("Leave as Mercenary", -100, 100)]
+    [SettingPropertyInteger("Leave as Mercenary", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveMercenary {
       get;
@@ -95,7 +95,7 @@ namespace DefectionOverhaul
     } = 50;
 
 
-    [SettingPropertyInteger("Leave as Mercenary - Deceitful (Honor -2)", -100, 100)]
+    [SettingPropertyInteger("Leave as Mercenary - Deceitful (Honor -2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveMercenaryHonorMinus2 {
       get;
@@ -103,7 +103,7 @@ namespace DefectionOverhaul
     } = 50;
 
 
-    [SettingPropertyInteger("Leave as Mercenary - Devious (Honor -1)", -100, 100)]
+    [SettingPropertyInteger("Leave as Mercenary - Devious (Honor -1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveMercenaryHonorMinus1 {
       get;
@@ -111,7 +111,7 @@ namespace DefectionOverhaul
     } = 50;
 
 
-    [SettingPropertyInteger("Leave as Mercenary - Honest (Honor 1)", -100, 100)]
+    [SettingPropertyInteger("Leave as Mercenary - Honest (Honor 1)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveMercenaryHonorPlus1 {
       get;
@@ -119,7 +119,7 @@ namespace DefectionOverhaul
     } = 50;
 
 
-    [SettingPropertyInteger("Leave as Mercenary - Honorable (Honor 2)", -100, 100)]
+    [SettingPropertyInteger("Leave as Mercenary - Honorable (Honor 2)", -100, 100, RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Player's Kingdom - Minimum Relation Required for Never Leave")]
     public int MinLeaderRelationLeaveMercenaryHonorPlus2 {
       get;
@@ -127,28 +127,28 @@ namespace DefectionOverhaul
     } = 50;
 
 
-    [SettingPropertyBool("Defection - Global")]
+    [SettingPropertyBool("Defection - Global", RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Global")]
     public bool ToggleDefectionGlobal {
       get;
       set;
     } = false;
 
-    [SettingPropertyBool("Leave - Global")]
+    [SettingPropertyBool("Leave - Global", RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Global")]
     public bool ToggleLeaveGlobal {
       get;
       set;
     } = false;
 
-    [SettingPropertyBool("Leave as Mercenary - Global")]
+    [SettingPropertyBool("Leave as Mercenary - Global", RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Global")]
     public bool ToggleLeaveMercenaryGlobal {
       get;
       set;
     } = false;
 
-    [SettingPropertyBool("Enable Debug Messages")]
+    [SettingPropertyBool("Enable Debug Messages", RequireRestart = false, HintText = "x")]
     [SettingPropertyGroup("Debug")]
     public bool ToggleDebugMessages {
       get;
